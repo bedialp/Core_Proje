@@ -17,12 +17,29 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Business Layer\BusinessLayer.csproj" />
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ViewComponents\Dashboard\" />
+    <Folder Include="ViewComponents\SocialMedia\" />
+    <Folder Include="Views\Shared\Components\AdminNavbarMessageList\" />
+    <Folder Include="Views\Shared\Components\AdminNotificationNavbarList\" />
+    <Folder Include="Views\Shared\Components\FeatureStatistics\" />
+    <Folder Include="Views\Shared\Components\Last5Projects\" />
+    <Folder Include="Views\Shared\Components\MessageList\" />
+    <Folder Include="Views\Shared\Components\VisitorMap\" />
+    <Folder Include="Views\Shared\Components\ToDoListPanel\" />
+    <Folder Include="Views\Shared\Components\StatisticsDashboard2\" />
+    <Folder Include="Views\Shared\Components\SocialMediaList\" />
+    <Folder Include="Views\Shared\Components\SlideList\" />
+    <Folder Include="Views\Shared\Components\ProjectList\" />
   </ItemGroup>
 
 </Project>
