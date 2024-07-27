@@ -43,7 +43,7 @@ namespace Business_Layer.Concreate
 			_experienceDal.Update(t);
 		}
 
-		public List<Experience> TGetListbyFilter()
+		public List<Experience> TGetListByFilter()
 		{
 			throw new NotImplementedException();
 		}

@@ -43,7 +43,7 @@ namespace Business_Layer.Concreate
 			_contactDal.Update(t);
 		}
 
-		public List<Contact> TGetListbyFilter()
+		public List<Contact> TGetListByFilter()
 		{
 			throw new NotImplementedException();
 		}

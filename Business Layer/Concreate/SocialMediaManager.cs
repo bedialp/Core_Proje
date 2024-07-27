@@ -38,7 +38,7 @@ namespace Business_Layer.Concreate
 			return _socialMediaDal.GetList();
 		}
 
-		public List<SocialMedia> TGetListbyFilter()
+		public List<SocialMedia> TGetListByFilter()
 		{
 			throw new NotImplementedException();
 		}

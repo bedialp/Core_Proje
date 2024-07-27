@@ -43,7 +43,7 @@ namespace Business_Layer.Concreate
 			throw new NotImplementedException();
 		}
 
-		public List<Message> TGetListbyFilter()
+		public List<Message> TGetListByFilter()
 		{
 			throw new NotImplementedException();
 		}

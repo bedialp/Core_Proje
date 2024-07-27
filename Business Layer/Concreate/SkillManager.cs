@@ -43,7 +43,7 @@ namespace Business_Layer.Concreate
 			_skillDal.Update(t);
 		}
 
-		public List<Skill> TGetListbyFilter()
+		public List<Skill> TGetListByFilter()
 		{
 			throw new NotImplementedException();
 		}

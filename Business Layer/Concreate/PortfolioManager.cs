@@ -28,24 +28,24 @@ namespace Business_Layer.Concreate
 			_portfolioDal.Delete(t);
 		}
 
-		public List<Portfolio> TGetList()
-		{
-			return _portfolioDal.GetList();
-		}
-
 		public Portfolio TGetByID(int id)
 		{
 			return _portfolioDal.GetByID(id);
 		}
 
+		public List<Portfolio> TGetList()
+		{
+			return _portfolioDal.GetList();
+		}
+
+		public List<Portfolio> TGetListByFilter()
+		{
+			throw new NotImplementedException();
+		}
+
 		public void TUpdate(Portfolio t)
 		{
 			_portfolioDal.Update(t);
-		}
-
-		public List<Portfolio> TGetListbyFilter()
-		{
-			throw new NotImplementedException();
 		}
 	}
 }

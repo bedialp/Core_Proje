@@ -1,4 +1,5 @@
-﻿using Business_Layer.Concreate;
+﻿
+using Business_Layer.Concreate;
 using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,7 +7,7 @@ namespace Core_Proje.ViewComponents.Portfolio
 {
 	public class PortfolioList : ViewComponent
 	{
-		PortfolioManager portfolioManager = new(new EfPortfolioDal());
+		PortfolioManager portfolioManager = new PortfolioManager(new EfPortfolioDal());
 		public IViewComponentResult Invoke()
 		{
 			var values = portfolioManager.TGetList();

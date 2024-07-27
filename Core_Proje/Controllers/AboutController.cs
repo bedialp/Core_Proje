@@ -5,10 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Proje.Controllers
 {
-	public class FeatureController : Controller
+	public class AboutController : Controller
 	{
 
-		FeatureManager featureManager = new FeatureManager(new EfFeatureDal());
+		AboutManager aboutManager = new AboutManager(new EfAboutDal());
 		[HttpGet]
 		public IActionResult Index()
 		{
@@ -16,13 +16,13 @@ namespace Core_Proje.Controllers
 			ViewBag.v2 = "One Cikanlar";
 			ViewBag.v3 = "One Cikan Sayfasi";
 
-			var values = featureManager.TGetByID(1);
+			var values = aboutManager.TGetByID(1);
 			return View(values);
 		}
 		[HttpPost]
-		public IActionResult Index(Feature feature)
+		public IActionResult Index(About about)
 		{
-			featureManager.TUpdate(feature);
+			aboutManager.TUpdate(about);
 			return RedirectToAction("Index", "Default");
 		}
 	}
