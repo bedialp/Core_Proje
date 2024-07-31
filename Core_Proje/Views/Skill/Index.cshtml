@@ -18,7 +18,6 @@
 				<th scope="col" class="sort" data-sort="status">Oran</th>
 				<th scope="col">Sil</th>
 				<th scope="col" class="sort" data-sort="completion">Düzenle</th>
-				<th scope="col"></th>
 			</tr>
 		</thead>
 		<tbody class="list">
@@ -42,12 +41,11 @@
 							</div>
 						</div>
 					</td>
-					<td><a href="/Skill/DeleteSkill/@item.SkillID" class="btn btn-danger">Sil</a></td>
-					<td><a href="/Skill/EditSkill/@item.SkillID" class="btn btn-info">Güncelle</a></td>
+					<td><a href="/Skill/DeleteSkill/@item.SkillID" class="btn btn-outline-danger">Sil</a></td>
+					<td><a href="/Skill/EditSkill/@item.SkillID" class="btn btn-outline-success">Güncelle</a></td>
 				</tr>
 			}
 		</tbody>
 	</table>
-	<a href="/Skill/AddSkill/" class="btn btn-primary">Yeni Yetenek Ekle</a>
+	<a href="/Skill/AddSkill/" class="btn btn-outline-info">Yeni Yetenek Ekle</a>
 </div>
-@*<script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/vendors/js/vendor.bundle.base.js"></script>*@
